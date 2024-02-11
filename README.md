@@ -6,7 +6,7 @@ Aplicação desenvolvida durante a Next Level Week, realizada pela [@Rocketseat]
 
 <p align="center">
   <img 
-    width="80%" 
+    width="50%" 
     alt="barcode"
     src="/github_assets/1234-5678-9000.png"
   />
@@ -29,8 +29,9 @@ Aplicação desenvolvida durante a Next Level Week, realizada pela [@Rocketseat]
 Iniciar um [ambiente virtual em Python](https://docs.python.org/pt-br/3/library/venv.html):
 ```bash
   $ pip3 install virtualenv            #download virtualenv package
-  $ python3 -m venv .venv              #creates ".venv" folder at current dir
-  $ . .venv/bin/activate               #starts the environment
+  $ python3 -m venv .venv              #create ".venv" folder at current dir
+  $ . .venv/bin/activate               #start the environment
+  $ pip install --upgrade pip          #update pip
 ```
 
 ### ▶️ Rodando o App:
@@ -40,7 +41,7 @@ Iniciar um [ambiente virtual em Python](https://docs.python.org/pt-br/3/library/
 ```
 
 ```bash
-$ POST http://localhost:4000/create_tag
+  POST http://localhost:4000/create_tag
   Request Body:
   {
     "product_code": "1234-5678-9000"
